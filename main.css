@@ -1,0 +1,431 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Sawarabi Mincho";
+    height: 1500px;
+    line-height: 150%;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgb(22, 135, 237), rgb(20, 55, 90));
+}
+
+li{
+    list-style: none;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.wrap{
+
+}
+
+
+/*||||||||||||||||||||||||||||||||||||*/
+/*header*/
+
+header{
+    height: 150px;
+    width: 100%;
+    margin: auto;
+    background: aliceblue;
+    color: black;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    z-index: 1;
+}
+
+header h1{
+    height: 100%;
+    position: relative;
+    font-size: 70px;
+    margin:0;
+    width: 50%;
+    top: calc(150px/2 - 35px/2);
+}
+
+#top-nav{
+    width: 40%;
+    position: relative;
+    overflow: hidden;
+    top: calc(150px/2 - 57px/2);
+}
+
+#top-nav a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#top-nav a:hover{
+    text-decoration: underline;
+    color: pink;
+}
+/*メインコンテンツカラー*/
+.colorful span:nth-child(1){color: red;}
+.colorful span:nth-child(2){color: blue;}
+.colorful span:nth-child(3){color: green;}
+.colorful span:nth-child(4){color: darkkhaki;}
+.colorful span:nth-child(5){color: pink;}
+.colorful span:nth-child(6){color: deepskyblue;}
+.colorful span:nth-child(7){color: firebrick;}
+.colorful span:nth-child(8){color: darkorange;}
+
+
+.o{
+    color: chartreuse;
+}
+.i{
+    color: cornflowerblue;
+}
+
+
+#top-nav ul{
+    display: flex;
+}
+
+#top-nav ul li{
+    padding: 5px;
+    margin: 0 15px;
+    border-left: 3px solid #333;
+    border-right: 3px solid #333;
+}
+
+#top-nav ul li+ #top-nav ul li {
+  border-left: 0;
+  border-right: 1px solid #333;
+}
+
+#top-nav ul li:last-child{
+    margin: 0 0 0 15px;
+}
+#top-nav ul li:first-child{
+    margin: 0 15px 0 0;
+}
+
+
+/*メインコンテンツ*/
+/*||||||||||||||||||||||||||||||||||||*/
+.main{
+    height: 1300px;
+    margin: auto;
+    width: 900px;
+    text-align: center;
+    overflow: auto;
+    z-index: 2;
+    position: flex;
+    padding-bottom: 50px;
+}
+
+form{
+    position: relative;
+    top: calc(800px/2 - 300px/2);
+    background: rgba(255,255,255,0.3);
+    padding: 30px;
+}
+
+
+form h1{
+    font-size: 40px;
+    color: azure;
+}
+label{
+    font-size: 20px;
+}
+
+input[type="text"]{
+    margin: 10px;
+    height: 30px;
+    width: 200px;
+    font-size: 25px;
+}
+
+textarea{
+    width: 400px;
+    margin: 10px;
+    height: 200px;
+    font-size: 25px;
+}
+
+::placeholder {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.count{
+    left: 170px;
+    position: relative;
+}
+
+/* ファイル */
+.picture{
+    height: 50px;
+    width: 90px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 0;
+}
+
+.data_send{
+    height: 50px;
+    width: 90px;
+    font-size: 20px;
+    margin: 10px;
+    background: black;
+    color: aqua;
+    padding: 0;
+}
+
+.img_area{
+    position: relative;
+    top:400px;
+}
+
+.img_area img{
+    display: block;
+    height: 50px;
+    width: 50px;;
+}
+
+
+
+
+/*バリデーションエラー*/
+form.cmxform label.error, label.error {
+    color: red;
+}
+
+
+
+
+
+
+
+/*||||||||||||||||||||||||||||||||||||*/
+/*footer*/
+footer{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background: aliceblue;
+    color: black;
+    box-sizing: border-box;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+    
+}
+footer a:hover{
+    text-decoration: underline;
+    color: pink;
+}
+
+
+
+footer .bottom{
+    top: calc(50px/2 - 22px/2);
+    position: relative;
+}
+
+/*------------------------------*/
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #f6f5f4;
+    font-family: "Sawarabi Mincho";
+    height: 1000px;
+    line-height: 150%;
+    box-sizing: border-box;
+}
+
+header{
+    height: 150px;
+    width: 100%;
+    margin: auto;
+    background: #6091d3;
+    color: aliceblue;
+    text-align: center;
+}
+
+header h1{
+    position: relative;
+    font-size: 50px;
+    margin: 0;
+    top: calc(150px/2 - 24px/2);
+}
+
+#top-nav{
+    float: right;
+    position: relative;
+    overflow: hidden;
+    top: calc(73px/2 - 27px/2);
+}
+
+#top-nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: aqua;
+    font-size: 25px;
+}
+
+#top-nav a:hover{
+    text-decoration: underline;
+}
+
+#top-nav li{
+    float: left;
+    margin: 15px;
+}
+
+
+.main{
+    padding: 0;
+    height: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.main h1{
+    color: deepskyblue;
+    margin-bottom: 60px;
+}
+
+li{
+    list-style: none;
+}
+
+
+
+
+.form{
+    width: 1150px;
+    font-size: 25px;
+    position: relative;
+    top: calc(730px/2 - 598.5px/2);
+    margin: auto;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 50px;
+    background: radial-gradient(ellipse at center, rgba(96,171,248,1) 0%,rgba(155,201,247,1) 28%,rgba(155,201,247,1) 18%,rgb(255, 255, 255) 70%);
+}
+
+.label{
+    display: -webkit-flex;
+    display: flex;
+    width: 300px;
+    float: left;
+    position: relative;
+    left: 150px;
+    margin: 5px;
+    padding: 10px;
+}
+
+
+
+input[type="text"],
+input[type="password"]{
+    height: 40px;
+    border-radius: 10px;
+    width: 200px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    position: relative;
+    right: 80px;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover{
+    cursor: pointer;
+}
+
+textarea{
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+    font-size: 15px;
+    margin: 10px 0;
+    right: 30px;
+    width: 300px;
+    height: 220px;
+}
+
+
+
+
+input[type="submit"],input[type="reset"]{
+    width: 100px;
+    margin: 20px;
+    background: #6091d3;
+    color: aliceblue;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 20px;
+}
+
+
+.err_msg{
+    color: red;
+    font-size: 18px;
+    position: absolute;
+    left: 800px;
+    padding: 15px;
+}
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*footer*/
+footer{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background: #6091d3;
+    color:aliceblue;
+    box-sizing: border-box;
+}
+
+
+
+footer .bottom{
+    top: calc(50px/2 - 22px/2);
+    position: relative;
+}
+
+/**----------------------------------------------------------------------------------*/
+/*product.php*/
+
+.product{
+    margin: auto;
+    text-align: center;
+}
+
+label.err{
+    color: red;
+}
+
+.product-form{
+    padding: 40px;
+}
+
+
+
