@@ -12,15 +12,13 @@
            <h1>メインコンテンツ</h1>
            <nav id="top-nav">
                <ul>
-                   
-                    
-                    <li><a href="index.php">ユーザー登録</a></li> 
+                    <li><a href="index.php">ユーザー登録</a></li>
                     <li><a href="login.php">ログイン</a></li>
                </ul>
            </nav>
        </header>
-       
-       
+
+
        <div class="main">
         <h1>ポートフォリオ/日記</h1>
           <section id="main-form">
@@ -31,7 +29,7 @@
                <label>タイトル：
                <input type="text" name="title" class="textbox">
                </label>
-               
+
                <label>天気：
                <select name="weather" id="weather">
                    <option value="0" 選択してください></option>
@@ -40,13 +38,13 @@
                    <option value="3">☂</option>
                </select>
                </label>
-               
+
                <label>本文：
                <pre style="margin:0;"><textarea name="text" id="js-count" class="count-set" minlength="0" maxlength="400"></textarea></pre>
                <div class="count"><span class="show-count">0</span>/400
                </div>
                </label>
-               
+
                <div>
                <div class="pic-drop">
                <div style="font-size:20px;">画像：<span style="font-size:15px;">ドラッグ＆ドロップ↓</span></div>
@@ -54,11 +52,11 @@
                 <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                 <input type="file" name="pic" class="input-file">
                 <img src="<?php echo getFormData('pic'); ?>" alt='' class="prev-img" style="<?php if(empty(getFormData('pic'))) echo 'display:none;' ?>">
-                    
+
                </label>
                </div>
                </div>
-               
+
                <div class="btn">
                   <input type="submit" name="submit" class="btn-mid" value="投稿する">
                 </div>
