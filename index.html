@@ -35,12 +35,9 @@
                <label>天気：
                <select name="weather" id="weather">
                    <option value="0" 選択してください></option>
-                   <?php
-                        foreach($dbCategory as $key=>$val){
-                   ?>
-                   <option value="<?php echo $val['name']; ?>">
-                       
-                   </option>
+                   <option value="1">☀</option>
+                   <option value="2">☁</option>
+                   <option value="3">☂</option>
                </select>
                </label>
                
